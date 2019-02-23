@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const router = express.Router();
-let db = require('../utils/sql_conn.js').db;
+const db = require('../utils/sql_conn');
 const bp = require('body-parser');
 router.use(bp.json());
 
