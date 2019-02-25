@@ -12,7 +12,7 @@ router.get("/", (req, res) => {
     .then((rows) => {
         res.send({
             success: true,
-            missionaries: rows
+            missionary: rows[Math.floor(Math.random() * rows.length)]
         })
     }).catch((err) => {
         res.send({

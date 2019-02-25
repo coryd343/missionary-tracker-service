@@ -17,6 +17,9 @@ app.use('/index', index);
 let users = require('./routes/users.js');
 app.use('/users', users);
 
+let getRandomMissionary = require('./routes/getRandomMissionary.js');
+app.use('/getRandomMissionary', getRandomMissionary);
+
 app.listen(process.env.PORT || 3000, () => {
   console.log("Server up and running on port: " + (process.env.PORT || 3000));
 });
